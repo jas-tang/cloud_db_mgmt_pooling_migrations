@@ -16,6 +16,7 @@ class Patient(Base):
     date_of_birth = Column(Date, nullable=False)
     gender = Column(String(10), nullable=False)
     contact_number = Column(String(15))
+    azure_is_active = Column(String(50), nullable =False)
 
     records = relationship('MedicalRecord', back_populates='patient')
 
