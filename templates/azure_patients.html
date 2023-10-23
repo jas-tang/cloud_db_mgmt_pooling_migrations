@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Azure Patients</title>
+</head>
+<body>
+    <h1>Azure Patients</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Date of Birth</th>
+            <th>Gender</th>
+            <th>Contact Number</th>
+            <th>Azure Is Active</th>
+        </tr>
+        {% for patient in patients %}
+        <tr>
+            <td>{{ patient.id }}</td>
+            <td>{{ patient.first_name }}</td>
+            <td>{{ patient.last_name }}</td>
+            <td>{{ patient.date_of_birth }}</td>
+            <td>{{ patient.gender }}</td>
+            <td>{{ patient.contact_number }}</td>
+            <td>{{ patient.azure_is_active }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

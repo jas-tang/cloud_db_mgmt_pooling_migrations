@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Medical Records</title>
+</head>
+<body>
+    <h1>Medical Records</h1>
+    <table>
+        <tr>
+            <th>Record ID</th>
+            <th>Patient ID</th>
+            <th>Diagnosis</th>
+            <th>Treatment</th>
+            <th>Admission Date</th>
+            <th>Discharge Date</th>
+        </tr>
+        {% for record in records %}
+        <tr>
+            <td>{{ record.id }}</td>
+            <td>{{ record.patient_id }}</td>
+            <td>{{ record.diagnosis }}</td>
+            <td>{{ record.treatment }}</td>
+            <td>{{ record.admission_date }}</td>
+            <td>{{ record.discharge_date }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
