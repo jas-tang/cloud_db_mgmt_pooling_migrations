@@ -1,3 +1,7 @@
+{% extends "base.html" %} 
+
+{% block content %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,27 +9,27 @@
 </head>
 <body>
     <h1>GCP Patients</h1>
-    <table>
+    <table class="border-collapse border border-gray-400">
         <tr>
-            <th>ID</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Date of Birth</th>
-            <th>Gender</th>
-            <th>Contact Number</th>
-            <th>Is Active</th>
+            <th class="border border-gray-400 p-2">ID</th>
+            <th class="border border-gray-400 p-2">First Name</th>
+            <th class="border border-gray-400 p-2">Last Name</th>
+            <th class="border border-gray-400 p-2">Date of Birth</th>
+            <th class="border border-gray-400 p-2">Gender</th>
+            <th class="border border-gray-400 p-2">Contact Number</th>
         </tr>
         {% for patient in patients %}
         <tr>
-            <td>{{ patient.id }}</td>
-            <td>{{ patient.first_name }}</td>
-            <td>{{ patient.last_name }}</td>
-            <td>{{ patient.date_of_birth }}</td>
-            <td>{{ patient.gender }}</td>
-            <td>{{ patient.contact_number }}</td>
-            <td>{{ patient.is_active }}</td>
+            <td class="border border-gray-400 p-2">{{ patient.id }}</td>
+            <td class="border border-gray-400 p-2">{{ patient.first_name }}</td>
+            <td class="border border-gray-400 p-2">{{ patient.last_name }}</td>
+            <td class="border border-gray-400 p-2">{{ patient.date_of_birth }}</td>
+            <td class="border border-gray-400 p-2">{{ patient.gender }}</td>
+            <td class="border border-gray-400 p-2">{{ patient.contact_number }}</td>
         </tr>
         {% endfor %}
     </table>
 </body>
 </html>
+
+{% endblock %}
