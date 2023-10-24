@@ -1,3 +1,7 @@
+{% extends "base.html" %} 
+
+{% block content %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,9 +27,11 @@
             <td>{{ patient.date_of_birth }}</td>
             <td>{{ patient.gender }}</td>
             <td>{{ patient.contact_number }}</td>
-            <td>{{ patient.azure_is_active }}</td>
+            
         </tr>
         {% endfor %}
     </table>
 </body>
 </html>
+
+{% endblock %}
