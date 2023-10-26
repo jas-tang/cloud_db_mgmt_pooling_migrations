@@ -258,6 +258,9 @@ if __name__ == '__main__':
 ```
 It was important to create a class for each table on each database. This was so you can access all the information on each table separately on one singular flask application. 
 
+I also had to disable SSL enforcement on for flexible server for the Flask app to be able to connect to the database. 
+![](https://github.com/jas-tang/cloud_db_mgmt_pooling_migrations/blob/main/media/azure%20disable%20ssl.JPG)
+
 This was the base.html. 
 ```
 <!DOCTYPE html>
@@ -333,4 +336,7 @@ This was the base.html.
 ```
 The rest of the html files are found within my github. 
 
-https://github.com/jas-tang/cloud_db_mgmt_pooling_migrations/blob/main/media/gcpazure.mov
+Here is a video showcasing my Flask Application. 
+
+https://github.com/jas-tang/cloud_db_mgmt_pooling_migrations/assets/141374136/dd283150-e9e6-453d-9a67-a863a83320a0
+
